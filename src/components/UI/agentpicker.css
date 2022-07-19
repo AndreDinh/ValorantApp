@@ -10,7 +10,7 @@ li {
   font-size: 30px;
   display: inline-block;
   margin: 5px;
-  border: solid 1px var(--v-white);
+  /* border: solid 1px var(--v-white); */
   padding: 5px;
   font-family: "DIN Next LT Pro Bold";
 }
@@ -25,7 +25,7 @@ li {
 }
 
 img {
-  width: 5em;
+  width: 8em;
 }
 
 .center {
@@ -64,8 +64,13 @@ div.agents-container li {
   height: 75px;
   display: flex;
   padding-top: 5px;
-  border: solid 1px var(--v-white);
+  /* border: solid 1px var(--v-white); */
   transition: 0.2s height;
+}
+
+
+.item-group{
+  padding-inline-start: 0px;
 }
 
 @keyframes fadein {

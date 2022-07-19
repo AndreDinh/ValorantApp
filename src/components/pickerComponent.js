@@ -21,11 +21,29 @@ export default function Picker({
     <>
       <h1>{title}</h1>
       <h3>Choose {title}</h3>
-      <ul>
+
+      <ul className="">
+        {currentItemPool.map((item, i) => (
+          <div
+            key={i}
+            className="agents-container mb-3 d-inline-flex"
+            onClick={() => {
+              setCurrentItemPool(currentItemPool.filter((i) => i !== item));
+              setUserSelectedItems(userSelectedItems.filter((i) => i !== item));
+            }}
+          >
+            <img className="fa-4x" alt={item} src={`/icons/${item}_icon.webp`} />
+            <li>{item}</li>
+          </div>
+        ))}
+      </ul>
+
+
+      <ul className="item-group">
         {items.map((item, i) => (
           <li
             key={i}
-            className={`${itemClass} ${""}`}
+            className={`${itemClass} d-inline-flex`}
             onClick={() => {
               if (
                 currentItemPool.length < maxPickCount &&
@@ -41,21 +59,7 @@ export default function Picker({
         ))}
       </ul>
 
-      <ul className="Random-container">
-        {currentItemPool.map((item, i) => (
-          <div
-            key={i}
-            className="agents-container"
-            onClick={() => {
-              setCurrentItemPool(currentItemPool.filter((i) => i !== item));
-              setUserSelectedItems(userSelectedItems.filter((i) => i !== item));
-            }}
-          >
-            <img alt={item} src={`/icons/${item}_icon.webp`} />
-            <li>{item}</li>
-          </div>
-        ))}
-      </ul>
+     
 
       <button
         onClick={() => {

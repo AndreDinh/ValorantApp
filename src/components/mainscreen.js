@@ -15,21 +15,10 @@ const mainScreen = () => {
 //   }
   return (
     <Wrapper>
+      <h1 className="text-center mb-5 main-header_title">Valorant <br/> Randomizer</h1>
      <AgentPicker />
-
      <MapPicker />
-   {/* {!agentClick ? <AgentPicker/> : <h1> Pick a randomizer</h1>}
-   {!mapClick ? <Mappicker/> : <></>} */}
-     
-      {/* {agentClick ? (
-        <AgentPicker />
-      ) : mapClick ? (
-        <MapPicker />
-      ) : (
-        <h2>Choose agent or map randomizer</h2>
-      )} */}
-      {/* <button onClick={() => AgentShowHandler}>Pick a map</button>
-      <button onClick={() => mapShowHandler}>Pick a map</button> */}
+   
     </Wrapper>
   );
 };

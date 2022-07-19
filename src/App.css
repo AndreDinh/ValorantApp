@@ -205,6 +205,9 @@ button:hover .label-text:after {
   background-color: var(--v-white);
 }
 
-
+.main-header_title{
+  font-size: 8rem;
+  font-family: "DIN Next LT Pro Bold";
+}
 
 
