@@ -1,0 +1,79 @@
+h2 {
+  font-family: "VALORANT";
+  font-size: 100px;
+  text-align: center;
+  margin: 0;
+}
+li {
+  text-align: center;
+  list-style-type: none;
+  font-size: 30px;
+  display: inline-block;
+  margin: 5px;
+  /* border: solid 1px var(--v-white); */
+  padding: 5px;
+  font-family: "DIN Next LT Pro Bold";
+}
+
+.agents-class {
+  cursor: pointer;
+  transition: 0.2s background;
+}
+
+.agents-class:hover {
+  background: rgba(64,126,64,128);
+}
+
+img {
+  width: 8em;
+}
+
+.center {
+  margin: 5px;
+  padding: 3px;
+  width: 20%;
+}
+
+ul > div {
+  display: inline;
+}
+
+div > li {
+  font-size: 40px;
+}
+
+div.agents-container {
+  display: flex;
+  height: fit-content;
+  cursor: not-allowed;
+  transition: 0.2s background;
+  animation-name: fadein;
+  animation-duration: 0.5s;
+}
+
+div.agents-container:hover {
+  background: rgba(128,64,64,128);
+}
+
+div.agents-container li {
+  border: none;
+  padding: 5px;
+}
+
+.Random-container {
+  height: 75px;
+  display: flex;
+  padding-top: 5px;
+  /* border: solid 1px var(--v-white); */
+  transition: 0.2s height;
+}
+
+
+.item-group{
+  padding-inline-start: 0px;
+}
+
+@keyframes fadein {
+  from {opacity: 0.0;}
+  to {opacity: 1.0;}
+}
