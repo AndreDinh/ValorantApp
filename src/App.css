@@ -161,7 +161,6 @@ button:hover .hover-effect {
 }
 
 .label-text:after {
-  content: "";
   display: block;
   position: absolute;
   height: 0.6rem;
@@ -207,14 +206,5 @@ button:hover .label-text:after {
 }
 
 
-h2{
-  font-family: "VALORANT";
-  font-size: 100px;
-  text-align: center;
-  margin: 0;
-}
-li{
- text-align: center;
- list-style-type:none;
- font-size: 50px;
-}
+
+
